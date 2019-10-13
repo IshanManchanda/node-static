@@ -1,0 +1,340 @@
+div#view_container {
+	padding-top: 0;
+}
+
+#particles-js {
+	left: 0;
+	top: 0;
+}
+
+.landing.first {
+	align-items: center;
+	background-color: #303B82;
+	color: #FFF;
+	display: flex;
+	font-weight: normal;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+	.landing.first {
+		align-items: inherit;
+		padding-top: 30vh;
+	}
+}
+
+.landing.first * {
+	font-family: Montserrat, sans-serif;
+	margin: 0;
+}
+
+.landing.first .alphanode {
+	z-index: 1;
+}
+
+.landing.first .alphanode .main {
+	font-size: 4rem;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.landing.first .alphanode .year {
+	color: #92C9FF;
+	font-size: 1.5rem;
+	text-align: right;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 500px) {
+	.landing.first .alphanode {
+		transform: scale(0.7) !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.landing.first .alphanode {
+		transform: scale(0.8);
+	}
+}
+
+.landing.first .register-result {
+	border: 1px solid #92C9FF;
+	border-radius: 8px;
+	bottom: 50px;
+	color: #92C9FF;
+	display: block;
+	font-size: 0.9rem;
+	padding: 10px 20px;
+	position: absolute;
+	right: 50%;
+	transform: translate(50%, 0);
+	transition: all 0.2s;
+	z-index: 1;
+}
+
+.landing.first .register-result:hover {
+	background-color: #22114F;
+	border-color: #22114F;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	color: #FFF;
+}
+
+@media only screen and (max-width: 750px) {
+	.landing.first .register-result {
+		bottom: 30vh;
+	}
+}
+
+h1.heading {
+	font-family: montserrat, sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+.info {
+	display: block;
+	padding: 60px 16% 80px 16%;
+}
+
+.info > p {
+	letter-spacing: 0.5px;
+	text-align: justify;
+}
+
+@media only screen and (max-width: 1025px) {
+	.info {
+		padding: 60px 10%;
+	}
+}
+
+.info dl {
+	padding: 20px 0;
+}
+
+.info dt, .info dd {
+	display: block;
+	line-height: 1.8;
+	margin: 0;
+	width: 100%;
+}
+
+.info dt {
+	font-family: montserrat, sans-serif;
+	font-size: 1.01rem;
+	font-weight: bold;
+}
+
+.info dt::before {
+	content: '\276F';
+	padding: 0 10px;
+}
+
+.info dd {
+	line-height: 1.5;
+	margin: 0 0 20px 0;
+	padding: 0 0 0 60px;
+}
+
+.events {
+	background-color: #F1EBFA;
+	display: block;
+	padding: 60px 4.6%;
+	position: relative;
+}
+
+@media only screen and (max-width: 300px) {
+	.events {
+		padding: 60px 0;
+	}
+
+	.events div.event-container div.event {
+		border-radius: 0;
+		margin: 10px 0;
+		width: 100vw;
+	}
+}
+
+.events::before {
+	background-color: #FFF;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+	content: '';
+	display: block;
+	height: 4vw;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.events::after {
+	background-color: #FFF;
+	bottom: 0;
+	clip-path: polygon(0 100%, 100% 100%);
+	content: '';
+	display: block;
+	height: 4vw;
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
+.events .heading {
+	font-size: 1.8rem;
+	margin: 50px 8%;
+}
+
+.events .event-container .row {
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: center;
+	left: 50%;
+	overflow-x: auto;
+	padding: 0 0 50px 0;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 85%;
+}
+
+@media only screen and (max-width: 920px) {
+	.events .event-container .row {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		left: 0;
+		transform: translate(0, 0);
+		width: 100%;
+	}
+
+	.events .event-container .row div.event {
+		flex: 0 0 auto;
+		padding: 30px 40px 40px 40px;
+		width: 89%;
+	}
+}
+
+.events .event-container .row .event {
+	align-items: center;
+	background-color: #F9F6FD;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	height: 340px;
+	margin: 10px 10px;
+	max-width: 305px;
+	min-width: 250px;
+	padding: 30px 50px 40px 50px;
+	transition: all 0.2s;
+	width: 90%;
+}
+
+.events .event-container .row .event:hover {
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.events .event-container .row .event .name {
+	color: #22114F;
+	font-family: montserrat, sans-serif;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 10px 0;
+	text-align: left;
+	width: 100%;
+}
+
+.events .event-container .row .event .brief {
+	font-size: 1rem;
+	letter-spacing: 0;
+	margin: 10px 0 5px 0;
+	text-align: left;
+	width: 100%;
+}
+
+.events .event-container .row .event .tagline {
+	font-size: 0.82rem;
+	margin: 0 0 20px 0;
+	text-align: left;
+	width: 100%;
+}
+
+.events .event-container .row .event .specs {
+	font-size: 0.8rem;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+}
+
+.events .event-container .row .event .button {
+	border: 1px solid #303B82;
+	border-radius: 8px;
+	color: #303B82;
+	cursor: pointer;
+	display: block;
+	font-family: montserrat, sans-serif;
+	margin: 20px 0 0 0;
+	min-width: 123px;
+	padding: 8px 20px;
+	position: relative;
+	text-align: center;
+	transition: all 0.2s;
+	width: 75%;
+}
+
+.events .event-container .row .event .button:not([class*='lock']):hover {
+	background-color: #22114F;
+	border-color: #22114F;
+	color: #FFF;
+}
+
+.events .event-container .row .event .button:not([class*='lock']):hover.lock::before {
+	filter: brightness(0) invert(1);
+}
+
+.events .event-container .row .event .button.lock::before {
+	content: url('/assets/images/icons/lock.png');
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	top: 1px;
+	width: 20px;
+}
+
+.events .event-container .row .event .button .countdown {
+	background-color: #303B82;
+	border-radius: 0 0 8px 8px;
+	color: #FFF;
+	display: block;
+	font-size: 0.9em;
+	left: 50%;
+	padding: 5px 10px 8px 10px;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	transform: translate(-50%, 0);
+	width: 90%;
+}
+
+.sponsors {
+	margin: 0 0 60px 0;
+	padding: 60px 8%;
+}
+
+.sponsors .logo-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.sponsors .logo-container .logo {
+	display: block;
+	height: 100px;
+	margin: 20px;
+}
+
+.sponsors .logo-container .logo img {
+	display: block;
+	height: 100%;
+}
