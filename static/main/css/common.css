@@ -1,15 +1,15 @@
 body {
-	color: #242424;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 0.92em;
-	margin: 0;
 	overflow-x: hidden;
 	width: 100%;
+	margin: 0;
+	color: #242424;
 }
 
 a {
-	color: inherit;
 	text-decoration: none;
+	color: inherit;
 }
 
 * {
@@ -18,9 +18,9 @@ a {
 }
 
 p {
-	letter-spacing: 0.5px;
 	line-height: 1.8;
 	text-align: justify;
+	letter-spacing: 0.5px;
 	/*@include below-desktop{
 		 text-align: left;
 	}
@@ -33,25 +33,25 @@ div#page_container-c {
 }
 
 div#view_container-c {
+	position: relative;
 	display: block;
 	height: auto;
-	position: relative;
 }
 
 #particles-js {
-	height: 100%;
-	left: 0;
 	position: absolute;
 	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
 }
 
 section.first {
+	position: relative;
 	display: block;
+	width: 100%;
 	min-height: calc(100vh - 0.0 * 72px);
 	padding-top: 72px;
-	position: relative;
-	width: 100%;
 }
 
 .node-green {
@@ -59,8 +59,8 @@ section.first {
 }
 
 .footer-c.light {
-	background-color: #FFF;
 	color: #242424;
+	background-color: #FFFFFF;
 }
 
 .footer-c.light .contact-details p.contact a {
@@ -68,13 +68,13 @@ section.first {
 }
 
 .footer-c.light .contact-details p.contact a:hover {
+	color: #FFFFFF;
 	background-color: #303B82;
-	color: #FFF;
 }
 
 .footer-c.light .links-c .link .name {
+	color: #FFFFFF;
 	background-color: #242424;
-	color: #FFF;
 }
 
 .footer-c.light .links-c .link .name::after {
@@ -82,18 +82,18 @@ section.first {
 }
 
 .footer-c {
-	align-items: center;
-	background-color: #22114F;
-	color: #FFF;
-	display: flex;
-	flex-direction: column;
 	font-family: Montserrat, sans-serif;
 	font-size: 1em;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 	min-height: 350px;
 	padding: 40px 60px;
-	position: relative;
-	width: 100%;
+	color: #FFFFFF;
+	background-color: #22114F;
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,18 +103,18 @@ section.first {
 }
 
 .footer-c .heart {
-	height: 1.1rem;
-	margin: 0 3px;
 	position: relative;
 	top: 0.2rem;
+	height: 1.1rem;
+	margin: 0 3px;
 }
 
 .footer-c .content-c {
 	display: grid;
+	width: 100%;
 	grid-template-areas: "text map" "links map";
 	grid-template-columns: 50% auto;
 	grid-template-rows: auto auto;
-	width: 100%;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -135,9 +135,9 @@ section.first {
 
 .content-c p.intro {
 	font-size: 0.9em;
-	grid-area: text;
 	margin: 20px 10px 0 0;
 	text-align: right;
+	grid-area: text;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -154,12 +154,12 @@ section.first {
 }
 
 .content-c .contact-details {
-	align-items: flex-end;
 	display: flex;
+	align-items: flex-end;
 	flex-direction: column;
-	grid-area: links;
 	justify-content: flex-start;
 	margin: 0 10px 20px 0;
+	grid-area: links;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -182,15 +182,15 @@ section.first {
 }
 
 .content-c .contact-details p.contact a {
-	border-radius: 100px;
-	color: #7CAE39;
 	font-size: 0.9em;
 	padding: 5px 8px;
 	transition: all 0.2s;
+	color: #7CAE39;
+	border-radius: 100px;
 }
 
 .content-c .contact-details p.contact a:hover {
-	background-color: #FFF;
+	background-color: #FFFFFF;
 }
 
 .content-c .contact-details .links-c {
@@ -210,18 +210,18 @@ section.first {
 }
 
 .content-c #gmap {
-	border-radius: 5px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	display: block;
-	grid-area: map;
-	height: 220px;
-	margin: 0 10px;
-	max-width: 375px;
-	overflow: hidden;
 	position: relative;
 	top: 50%;
-	transform: translate(0, -50%);
+	display: block;
+	overflow: hidden;
 	width: 84%;
+	max-width: 375px;
+	height: 220px;
+	margin: 0 10px;
+	transform: translate(0, -50%);
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	grid-area: map;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -233,21 +233,21 @@ section.first {
 }
 
 .links-c {
-	align-items: center;
 	display: flex;
+	align-items: center;
+	width: 100%;
 	height: 30px;
 	padding: 0 5px;
-	width: 100%;
 }
 
 .links-c .link {
-	align-items: center;
-	display: flex;
-	height: 30px;
-	justify-content: flex-start;
-	margin: 0;
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 	width: 30px;
+	height: 30px;
+	margin: 0;
 }
 
 .links-c .link + .link {
@@ -255,51 +255,51 @@ section.first {
 }
 
 .links-c .link .name {
-	background-color: #FFF;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-	color: #242424;
-	display: block;
 	font-size: 0.8rem;
-	left: 50%;
 	line-height: 1.8;
-	opacity: 0;
-	padding: 0 10px;
-	pointer-events: none;
 	position: absolute;
 	top: -2.6rem;
-	transform: translate(-50%, 10px);
+	left: 50%;
+	display: block;
+	padding: 0 10px;
 	transition: all 0.2s;
+	transform: translate(-50%, 10px);
+	pointer-events: none;
+	opacity: 0;
+	color: #242424;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .links-c .link .name::after {
-	border: 6px solid transparent;
-	border-top-color: #FFF;
-	content: '';
-	display: block;
-	height: 0;
-	left: 50%;
 	position: absolute;
 	top: 100%;
-	transform: translate(-50%, 0);
+	left: 50%;
+	display: block;
 	width: 0;
+	height: 0;
+	content: '';
+	transform: translate(-50%, 0);
+	border: 6px solid transparent;
+	border-top-color: #FFFFFF;
 }
 
 .links-c .link:hover .name {
-	opacity: 1;
 	transform: translate(-50%, 0);
+	opacity: 1;
 }
 
 .links-c .link .icon {
-	border-radius: 100%;
 	display: block;
-	height: 100%;
 	width: 100%;
+	height: 100%;
+	border-radius: 100%;
 }
 
 .navbar-c.light {
-	background-color: #FFF;
 	color: #242424;
+	background-color: #FFFFFF;
 }
 
 .navbar-c.light .cross-c {
@@ -312,51 +312,51 @@ section.first {
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c.light .icons-c {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 
 	.navbar-c.light .icons-c.show {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 }
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c.light .links-c {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 
 	.navbar-c.light .links-c.show {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 
 	.navbar-c.light .links-c.show .nav-item-c {
-		color: #242424;
 		transition: all 0.3s;
+		color: #242424;
 	}
 
 	.navbar-c.light .links-c.show .nav-item-c:hover {
-		color: #303B82;
 		transition: all 0.3s;
+		color: #303B82;
 	}
 }
 
 .navbar-c.light .links-c .nav-item-c {
-	color: #242424;
 	transition: all 0.3s;
+	color: #242424;
 }
 
 .navbar-c.light .links-c .nav-item-c:hover {
-	color: #303B82;
 	transition: all 0.3s;
+	color: #303B82;
 }
 
 .navbar-c.transparent-light {
+	color: #FFFFFF;
 	background-color: transparent;
-	color: #FFF;
 }
 
 .navbar-c.transparent-light .cross-c {
-	color: #FFF;
+	color: #FFFFFF;
 }
 
 .navbar-c.transparent-light .cross-c.show {
@@ -369,7 +369,7 @@ section.first {
 	}
 
 	.navbar-c.transparent-light .icons-c.show {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 }
 
@@ -379,78 +379,78 @@ section.first {
 	}
 
 	.navbar-c.transparent-light .links-c.show {
-		background-color: #FFF;
+		background-color: #FFFFFF;
 	}
 
 	.navbar-c.transparent-light .links-c.show .nav-item-c {
-		color: #242424;
 		transition: all 0.3s;
+		color: #242424;
 	}
 
 	.navbar-c.transparent-light .links-c.show .nav-item-c:hover {
-		color: #303B82;
 		transition: all 0.3s;
+		color: #303B82;
 	}
 }
 
 .navbar-c.transparent-light .links-c .nav-item-c {
-	color: #FFF;
 	transition: all 0.3s;
+	color: #FFFFFF;
 }
 
 .navbar-c.transparent-light .links-c .nav-item-c:hover {
-	color: #FFF;
 	transition: all 0.3s;
+	color: #FFFFFF;
 }
 
 .navbar-c {
-	align-items: center;
-	display: flex;
-	height: 72px;
-	justify-content: flex-start;
 	position: fixed;
-	top: 0;
-	transition: top 0.5s;
-	width: 100%;
 	z-index: 3;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 72px;
+	transition: top 0.5s;
 }
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c {
-		background-color: transparent;
-		flex-direction: column;
 		font-family: Montserrat, sans-serif;
-		height: auto;
 		overflow: hidden;
+		flex-direction: column;
+		height: auto;
+		background-color: transparent;
 	}
 }
 
 .navbar-c .cross-c {
-	display: none;
 	z-index: 4;
+	display: none;
 }
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c .cross-c {
-		display: block;
-		height: 30px;
-		left: 5%;
 		position: absolute;
 		top: calc(0.5 * 72px - 0.5 * 30px);
+		left: 5%;
+		display: block;
 		width: 30px;
+		height: 30px;
 	}
 }
 
 .navbar-c .cross-c .one-c {
-	background-color: currentColor;
-	display: block;
-	height: 2px;
-	left: 50%;
 	position: absolute;
 	top: 6px;
-	transform: translate(-50%, 0);
-	transition: all 0.2s;
+	left: 50%;
+	display: block;
 	width: 20px;
+	height: 2px;
+	transition: all 0.2s;
+	transform: translate(-50%, 0);
+	background-color: currentColor;
 }
 
 .cross-c.show > .one-c {
@@ -458,15 +458,15 @@ section.first {
 }
 
 .navbar-c .cross-c .two-c {
-	background-color: currentColor;
-	display: block;
-	height: 2px;
-	left: 50%;
 	position: absolute;
 	top: 50%;
-	transform: translate(-50%, -50%);
-	transition: all 0.2s;
+	left: 50%;
+	display: block;
 	width: 20px;
+	height: 2px;
+	transition: all 0.2s;
+	transform: translate(-50%, -50%);
+	background-color: currentColor;
 }
 
 .cross-c.show > .two-c {
@@ -474,15 +474,15 @@ section.first {
 }
 
 .navbar-c .cross-c .three-c {
-	background-color: currentColor;
-	bottom: 6px;
-	display: block;
-	height: 2px;
-	left: 50%;
 	position: absolute;
-	transform: translate(-50%, -50%);
-	transition: all 0.2s;
+	bottom: 6px;
+	left: 50%;
+	display: block;
 	width: 20px;
+	height: 2px;
+	transition: all 0.2s;
+	transform: translate(-50%, -50%);
+	background-color: currentColor;
 }
 
 .cross-c.show > .three-c {
@@ -490,20 +490,20 @@ section.first {
 }
 
 .navbar-c .icons-c {
-	align-items: center;
 	display: flex;
-	height: 72px;
+	align-items: center;
 	justify-content: flex-start;
-	margin-left: 8%;
 	width: auto;
+	height: 72px;
+	margin-left: 8%;
 }
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c .icons-c {
 		justify-content: center;
+		width: 100%;
 		margin: 0;
 		padding: 4px 0 0 0;
-		width: 100%;
 	}
 }
 
@@ -512,8 +512,8 @@ section.first {
 }
 
 .navbar-c .icons-c .logo-c {
-	height: 100%;
 	width: auto;
+	height: 100%;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -523,26 +523,26 @@ section.first {
 }
 
 .navbar-c .links-c {
-	align-items: center;
 	display: flex;
-	height: 100%;
+	align-items: center;
 	justify-content: flex-end;
-	margin-left: auto;
-	margin-right: 8%;
 	width: 100%;
+	height: 100%;
+	margin-right: 8%;
+	margin-left: auto;
 }
 
 @media only screen and (max-width: 1025px) {
 	.navbar-c .links-c {
+		position: relative;
 		align-items: center;
 		flex-direction: column;
-		height: 0;
 		justify-content: flex-start;
+		width: 100%;
+		height: 0;
 		margin: 0;
 		padding: 0;
-		position: relative;
 		transition: all 0.2s;
-		width: 100%;
 	}
 
 	.navbar-c .links-c.show {
@@ -553,8 +553,8 @@ section.first {
 
 .navbar-c .links-c .nav-item-c {
 	font-weight: normal;
-	margin: 0 20px;
 	position: relative;
+	margin: 0 20px;
 }
 
 @media only screen and (max-width: 1025px) {
@@ -565,16 +565,16 @@ section.first {
 }
 
 .navbar-c .links-c .nav-item-c::after {
-	background-color: currentColor;
-	content: '';
-	display: block;
-	height: 2px;
-	left: 50%;
 	position: absolute;
 	top: 100%;
-	transform: translate(-50%, 0);
-	transition: all 0.3s;
+	left: 50%;
+	display: block;
 	width: 0;
+	height: 2px;
+	content: '';
+	transition: all 0.3s;
+	transform: translate(-50%, 0);
+	background-color: currentColor;
 }
 
 .navbar-c .links-c .nav-item-c:hover::after {
