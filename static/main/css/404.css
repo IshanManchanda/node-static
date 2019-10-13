@@ -3,10 +3,10 @@ div#view_container {
 }
 
 .error.first {
-	background-color: #303B82;
-	color: #FFF;
 	min-height: 100vh;
 	padding: 50px;
+	color: #FFFFFF;
+	background-color: #303B82;
 }
 
 .error.first * {
@@ -29,12 +29,12 @@ div#view_container {
 }
 
 .error.first img {
-	left: 50%;
-	margin: 40px 0;
-	max-width: 200px;
 	position: relative;
-	transform: translate(-50%, 0);
+	left: 50%;
 	width: 40vw;
+	max-width: 200px;
+	margin: 40px 0;
+	transform: translate(-50%, 0);
 }
 
 .error.first p {
@@ -42,35 +42,35 @@ div#view_container {
 }
 
 .error.first p q {
-	display: block;
 	font-style: italic;
-	margin: 20px 0;
+	display: block;
 	width: 100%;
+	margin: 20px 0;
 }
 
 .error.first .buttons {
-	align-items: center;
 	display: flex;
-	height: auto;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
+	height: auto;
 }
 
 .error.first .buttons a {
-	border: 1px solid #92C9FF;
-	border-radius: 8px;
-	color: #92C9FF;
 	font-size: 0.8rem;
 	margin: 10px;
 	padding: 8px 20px;
 	transition: all 0.2s;
+	color: #92C9FF;
+	border: 1px solid #92C9FF;
+	border-radius: 8px;
 }
 
 .error.first .buttons a:hover {
-	background-color: #22114F;
+	color: #FFFFFF;
 	border-color: #22114F;
+	background-color: #22114F;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	color: #FFF;
 }
 
 @media only screen and (max-width: 750px) {
@@ -82,8 +82,8 @@ div#view_container {
 
 @media only screen and (max-width: 750px) {
 	.error.first {
-		padding-left: 10px;
 		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	.error.first h1 {

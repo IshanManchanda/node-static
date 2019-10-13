@@ -1,110 +1,128 @@
 #form_container {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 150px 15px;
-    background-color: #303b82;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 150px 15px;
+	background-color: #303B82;
 }
 
 #particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    max-height: 100%;
-    pointer-events: none;
-    opacity: 0.5;
-    overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	max-height: 100%;
+	pointer-events: none;
+	opacity: 0.5;
 }
+
 .dash {
-    display: block;
-    width: 100vw;
-    max-width: 500px;
-    padding: 40px 50px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+	z-index: 1;
+	display: block;
+	width: 100vw;
+	max-width: 500px;
+	padding: 40px 50px;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 @media only screen and (max-width: 500px) {
-    .dash {
-        max-width: 90vw;
-   }
+	.dash {
+		max-width: 90vw;
+	}
 }
+
 .dash * {
-    font-family: Montserrat, sans-serif;
-    margin: 0;
+	font-family: Montserrat, sans-serif;
+	margin: 0;
 }
+
 form input[type=text] {
-    padding: 0 !important;
-    margin: 0 0 20px 0 !important;
-    font-size: 0.9em !important;
+	font-size: 0.9em !important;
+	margin: 0 0 20px 0 !important;
+	padding: 0 !important;
 }
+
 form input[type=email] {
-    padding: 0 !important;
-    margin: 0 0 20px 0 !important;
-    font-size: 0.9em !important;
+	font-size: 0.9em !important;
+	margin: 0 0 20px 0 !important;
+	padding: 0 !important;
 }
+
 form input[type=text]:focus + label {
-    color: #000 !important;
+	color: #000000 !important;
 }
+
 form input[type=email]:focus + label {
-    color: #000 !important;
+	color: #000000 !important;
 }
+
 form input[type=text]:focus {
-    border-bottom: 1px solid #000 !important;
-    box-shadow: 0 0.15px 0 0 #000 !important;
+	border-bottom: 1px solid #000000 !important;
+	box-shadow: 0 0.15px 0 0 #000000 !important;
 }
+
 form input[type=email]:focus {
-    border-bottom: 1px solid #000 !important;
-    box-shadow: 0 0.15px 0 0 #000 !important;
+	border-bottom: 1px solid #000000 !important;
+	box-shadow: 0 0.15px 0 0 #000000 !important;
 }
+
 ::placeholder {
-    color: #999 !important;
-    opacity: 1 !important;
+	opacity: 1 !important;
+	color: #999999 !important;
 }
+
 form button[type='submit'] {
-    display: block;
-    padding: 10px 20px;
-    margin: 0 auto;
-    border: none;
-    color: #fff;
-    background-color: #303b82;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: all 0.2s;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	background-color: #303B82;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 form button[type='submit']:hover {
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
-    background-color: #22114f;
+	background-color: #22114F;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.tabs .tab a{
-    color: #000 !important;
-    font-family: Montserrat, sans-serif !important;
-    text-transform: none !important;
-    font-size: 1.2rem !important;
-    font-weight: normal !important;
-    transition: font-weight 0.2s !important;
+
+.tabs .tab a {
+	font-family: Montserrat, sans-serif !important;
+	font-size: 1.2rem !important;
+	font-weight: normal !important;
+	transition: font-weight 0.2s !important;
+	text-transform: none !important;
+	color: #000000 !important;
 }
+
 .tabs .tab a:hover {
-    color:#000  !important;
-    font-weight: bold !important;
+	font-weight: bold !important;
+	color: #000000 !important;
 }
+
 .tabs .tab a.active {
-    color:#000!important;
+	color: #000000 !important;
 }
+
 .tabs .indicator {
-    background-color:#000!important;
-    height: 1px !important;
+	height: 1px !important;
+	background-color: #000000 !important;
 }
+
 .tabs {
-    margin-bottom: 40px !important;
+	margin-bottom: 40px !important;
 }
+
 input:-webkit-autofill, select:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
-    -webkit-text-fill-color: #000 !important;
-    -webkit-transition-delay: 9999s;
-    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+	-webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+	-webkit-transition-delay: 9999s;
+	-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+	-webkit-text-fill-color: #000000 !important;
 }
