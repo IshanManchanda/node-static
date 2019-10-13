@@ -1,0 +1,129 @@
+#form_container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 15px;
+    background-color: #303b82;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100%;
+    pointer-events: none;
+    opacity: 0.5;
+    overflow: hidden;
+}
+.dash {
+    display: block;
+    width: 100vw;
+    max-width: 600px;
+    padding: 40px 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+form {
+    padding: 0 20px;
+}
+@media only screen and (max-width: 500px) {
+    .dash {
+        max-width: 90vw;
+   }
+   form {
+       padding: 0 5px;
+   }
+}
+.dash * {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+form input[type=text] {
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+    font-size: 0.9em !important;
+}
+form input[type=email] {
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+    font-size: 0.9em !important;
+}
+form input[type=text]:focus + label {
+    color: #000 !important;
+}
+form input[type=email]:focus + label {
+    color: #000 !important;
+}
+form input[type=text]:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 0.15px 0 0 #000 !important;
+}
+form input[type=email]:focus {
+    border-bottom: 1px solid #000 !important;
+    box-shadow: 0 0.15px 0 0 #000 !important;
+}
+::placeholder {
+    color: #999 !important;
+    opacity: 1 !important;
+}
+form button[type='submit'] {
+    display: block;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    color: #fff;
+    background-color: #303b82;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+form button[type='submit']:hover {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #22114f;
+}
+.tabs .tab a{
+    color: #000 !important;
+    font-family: Montserrat, sans-serif !important;
+    text-transform: none !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    transition: font-weight 0.2s !important;
+}
+.tabs .tab a:hover {
+    color:#000  !important;
+    font-weight: bold !important;
+}
+.tabs .tab a.active {
+    color:#000 !important;
+}
+.tabs .indicator {
+    background-color:#000 !important;
+    height: 1px !important;
+}
+.tabs {
+    margin-bottom: 40px !important;
+}
+.dash .head-one {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color:#000;
+}
+.dash .head-two {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:#000;
+}
+input:-webkit-autofill, select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    -webkit-text-fill-color: #000 !important;
+    -webkit-transition-delay: 9999s;
+    -webkit-transition: color 9999s ease-out, background-color 9999s ease-out;
+}

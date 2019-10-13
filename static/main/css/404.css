@@ -1,0 +1,100 @@
+div#view_container {
+	padding-top: 0;
+}
+
+.error.first {
+	background-color: #303B82;
+	color: #FFF;
+	min-height: 100vh;
+	padding: 50px;
+}
+
+.error.first * {
+	font-family: Montserrat, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+}
+
+.error.first h1 {
+	font-size: 5em;
+	letter-spacing: 5px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.error.first h2 {
+	font-size: 1.3em;
+	margin-top: 0;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.error.first img {
+	left: 50%;
+	margin: 40px 0;
+	max-width: 200px;
+	position: relative;
+	transform: translate(-50%, 0);
+	width: 40vw;
+}
+
+.error.first p {
+	padding: 0 10px;
+}
+
+.error.first p q {
+	display: block;
+	font-style: italic;
+	margin: 20px 0;
+	width: 100%;
+}
+
+.error.first .buttons {
+	align-items: center;
+	display: flex;
+	height: auto;
+	justify-content: center;
+	width: 100%;
+}
+
+.error.first .buttons a {
+	border: 1px solid #92C9FF;
+	border-radius: 8px;
+	color: #92C9FF;
+	font-size: 0.8rem;
+	margin: 10px;
+	padding: 8px 20px;
+	transition: all 0.2s;
+}
+
+.error.first .buttons a:hover {
+	background-color: #22114F;
+	border-color: #22114F;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	color: #FFF;
+}
+
+@media only screen and (max-width: 750px) {
+	.error.first .buttons a {
+		line-height: 1.5;
+		padding: 10px 14px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.error.first {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.error.first h1 {
+		font-size: 4em;
+	}
+
+	.error.first h2 {
+		font-size: 1em;
+	}
+
+	.error.first p {
+		font-size: 1em;
+	}
+}
